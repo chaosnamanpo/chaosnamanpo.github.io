@@ -100,7 +100,7 @@ html {
 /*background*/
 }
 .hero {
-    background: url(../image/hero.jpg) no-repeat center / cover;
+    background: url(https://github.com/chaosnamanpo/chaosnamanpo.github.io/blob/master/hero.jpg) no-repeat center / cover;
     height: 100%;
     width: 100%;
     min-height: 700px;
@@ -405,7 +405,7 @@ div {
 
 .section-services:before {
     content: '';
-    background: url(../image/services-bg.jpg) no-repeat fixed center / cover;
+    background: url(https://github.com/chaosnamanpo/chaosnamanpo.github.io/blob/master/services-bg.jpg) no-repeat fixed center / cover;
     width: 100%;
     height: 400px; 
     position: absolute;
