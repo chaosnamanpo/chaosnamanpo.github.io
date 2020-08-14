@@ -32,6 +32,50 @@ h4 {
 .text-center {
     text-align: center;
 }
+/*background*/
+}
+.hero {
+    background: url(hero.jpg) no-repeat center / cover;
+    height: 100%;
+    width: 100%;
+    min-height: 700px;
+}
+.hero .container {
+    position: relative;
+    height: 100%;
+
+}
+.hero img {
+    height: 600px;
+}
+.hero .col-md-6:first-child {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 2;
+}
+
+.hero .col-md-6:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.hero h1 {
+    font-size: 46px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+}
+
+.hero img {
+    height: 600px;
+}
 /* LAYOUT
 ================================================== */
 html, body {
@@ -97,50 +141,7 @@ html {
     display: block;
 }
 
-/*background*/
-}
-.hero {
-    background: url(hero.jpg) no-repeat center / cover;
-    height: 100%;
-    width: 100%;
-    min-height: 700px;
-}
-.hero .container {
-    position: relative;
-    height: 100%;
 
-}
-.hero img {
-    height: 600px;
-}
-.hero .col-md-6:first-child {
-    position: absolute;
-    top: 35%;
-    left: 0;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    z-index: 2;
-}
-
-.hero .col-md-6:last-child {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.hero h1 {
-    font-size: 46px;
-    font-weight: 700;
-    margin: 0 0 15px;
-    text-transform: uppercase;
-}
-
-.hero img {
-    height: 600px;
-}
 
 @media (min-width: 1200px)
 .container {
@@ -178,6 +179,39 @@ html {
     -o-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
     -ms-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 }
+
+/* Section: Counters */
+
+.section-counters {
+    background: url(counters-bg.jpg) no-repeat fixed center / cover;
+	 width: 100%;
+    padding: 100px 0;
+    position: relative;
+}
+
+.section-counters:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.section-counters h4 {
+    color: #fff;
+    margin: 25px 0 0;
+}
+
+.site-section p.counter {
+    font-size: 100px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+    line-height: 0.8;
+}
+
 
 /* SITEMAIN
 ================================================== */
@@ -367,7 +401,11 @@ float: left;
     -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
     box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
 }
-
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 div {
     display: block;
 }
@@ -428,37 +466,7 @@ div {
     margin-left: auto;
 }
 
-* Section: Counters */
 
-.section-counters {
-    background: url(counters-bg.jpg) no-repeat fixed center / cover;
-	 width: 100%;
-    padding: 100px 0;
-    position: relative;
-}
-
-.section-counters:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.7);
-}
-
-.section-counters h4 {
-    color: #fff;
-    margin: 25px 0 0;
-}
-
-.site-section p.counter {
-    font-size: 100px;
-    font-weight: 300;
-    color: #fff;
-    margin: 0;
-    line-height: 0.8;
-}
 
 
 
@@ -486,6 +494,90 @@ element.style {
     width: 82%;
 }
 
+
+
+
+/*MODAL
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+#myImg1:hover {opacity: 0.7;}
+
+/* The Modal (background) 
+.modal {
+  display: none; /* Hidden by default 
+  position: fixed; /* Stay in place 
+  z-index: 1; /* Sit on top 
+  padding-top: 100px; /* Location of the box 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width 
+  height: 100%; /* Full height 
+  overflow: auto; /* Enable scroll if needed 
+  background-color: rgb(0,0,0); /* Fallback color 
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) 
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image 
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation 
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+*/
+/* The Close Button *//*
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+*/
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
@@ -562,7 +654,7 @@ element.style {
     -ms-transition: background-color 0.25s ease-in-out;
 }
 
-.portfolio-item:hover:before {
+.portfolio-item:hover:before{
     background-color: rgba(33,33,33,0.6);
 }
 
@@ -667,5 +759,3 @@ element.style {
 .section-form .btn {
     margin-top: 40px;
 }
-
-
