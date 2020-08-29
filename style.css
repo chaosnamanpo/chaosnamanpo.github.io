@@ -35,7 +35,7 @@ h4 {
 /*background*/
 }
 .hero {
-    background: url(hero.jpg) no-repeat center / cover;
+    background-image: url(hero.jpg) no-repeat center / cover;
     height: 100%;
     width: 100%;
     min-height: 700px;
@@ -73,9 +73,6 @@ h4 {
     text-transform: uppercase;
 }
 
-.hero img {
-    height: 600px;
-}
 /* LAYOUT
 ================================================== */
 html, body {
